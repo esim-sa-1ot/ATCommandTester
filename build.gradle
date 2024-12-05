@@ -1,0 +1,33 @@
+plugins {
+	id 'java'
+	id 'java-library'
+	id 'idea'
+}
+
+group = 'net.m2msupport'
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+}
+
+dependencies {
+	// Lombok annotation processor.
+	compileOnly("org.projectlombok:lombok:${lombokVersion}")
+	annotationProcessor("org.projectlombok:lombok:${lombokVersion}")
+
+	// https://mvnrepository.com/artifact/dev.prokop.rxtx/rxtx
+	implementation 'dev.prokop.rxtx:rxtx:2.2.2'
+
+}
+
+test {
+	useJUnitPlatform()
+}
+
+java {
+	withSourcesJar()
+	sourceCompatibility = JavaVersion.toVersion(javaVersion)
+	targetCompatibility = JavaVersion.toVersion(javaVersion)
+}
+

@@ -1,3 +1,5 @@
+package net.m2msupport.app;
+
 import gnu.io.CommPort;
 import gnu.io.CommPortIdentifier;
 import gnu.io.SerialPort;

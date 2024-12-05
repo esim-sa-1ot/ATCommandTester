@@ -1,3 +1,5 @@
+package net.m2msupport.app;
+
 public class Utilities {
 	private static char[] intToHexBuffer;
 

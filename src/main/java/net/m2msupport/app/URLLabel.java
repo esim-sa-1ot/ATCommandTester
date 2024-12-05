@@ -1,3 +1,5 @@
+package net.m2msupport.app;
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Desktop;
